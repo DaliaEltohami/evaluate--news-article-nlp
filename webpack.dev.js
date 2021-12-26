@@ -6,7 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
     // define the entry point and add babel-polyfill add the beginning to ensure the polyfills are loaded first
     entry: ['babel-polyfill','./src/client/index.js'],
-    // access js code from library client 
+    // allow events in global scope to access js code in function scope from client library 
     output: {
         libraryTarget: 'var',
         library: 'Client'
