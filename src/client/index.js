@@ -10,7 +10,7 @@ import './styles/header.scss'
 import './styles/footer.scss'
 
 
-console.log(checkForName);
+console.log(checkForURL);
 
 alert("I EXIST")
 console.log("CHANGE!!");
