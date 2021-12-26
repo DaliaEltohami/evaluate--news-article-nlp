@@ -43,6 +43,7 @@ module.exports = {
             template: "./src/client/views/index.html",
             filename: "./index.html",
         }),
+        // instantiate google workbox webpack blugin to add Service Workers to allow offline access
         new WorkboxPlugin.GenerateSW(),
         // instantiate mini-css-extract-plugin which will extarct all the styles in one separate file which will be minified
         new MiniCssExtractPlugin({filename: '[name].css'})
